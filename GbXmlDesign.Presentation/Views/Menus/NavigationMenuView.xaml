@@ -1,0 +1,215 @@
+﻿<UserControl x:Class="GbXmlDesign.Presentation.Views.Menus.NavigationMenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True" Width="220"
+             xmlns:viewmodels="clr-namespace:GbXmlDesign.Presentation.ViewModels.Menus">
+
+
+    <UserControl.DataContext>
+        <viewmodels:NavigationMenuViewModel />
+    </UserControl.DataContext>
+
+
+    <Border Background="{StaticResource menuBackColor}"
+            CornerRadius="0,30,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Height="800">
+
+        <Border.Effect>
+            <DropShadowEffect
+                ShadowDepth="0.2"
+                Color="White"
+                BlurRadius="3"
+                Direction="70"/>
+        </Border.Effect>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--// Home View - Navigate Button //-->
+            <Border x:Name="AppHomeBorder"
+                        DockPanel.Dock="Top"
+                        Background="{StaticResource menuBackColor}"
+                        Grid.Row="1" >
+
+                <Button x:Name="AppHomeViewButton"
+                            Style="{StaticResource MenuButton}"
+                            Click="ActiveTab_Click"
+                            Command="{Binding NavigateCommand}"
+                            CommandParameter="AppHomeView">
+
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <Image Source="pack://application:,,,/GbXmlDesign.Presentation;component/Resources/Images/Dashboard.png"
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Top"
+                                   Stretch="Uniform"/>
+
+                        <!--<Popup HorizontalOffset="-5"
+                           PlacementTarget="{Binding ElementName=projectMgmtView}"
+                           IsOpen="{Binding ElementName=projectMgmtView, Path=IsMouseOver, Mode=OneWay}"
+                           Style="{StaticResource PopupStyle}"/>-->
+
+                        <TextBlock Text="Home" VerticalAlignment="Center" Margin="10,0,10,0" />
+
+                    </StackPanel>
+                </Button>
+            </Border>
+
+            <!--// gbXML 3D View - Navigate Button //-->
+            <Border x:Name="GbxmlViewerBorder"
+                        DockPanel.Dock="Top"
+                        Background="{StaticResource menuBackColor}"
+                        Grid.Row="2">
+
+                <Button x:Name="GbXmlViewerViewButton"
+                            Style="{StaticResource MenuButton}"
+                            Background="Transparent"
+                            Click="ActiveTab_Click"
+                            Command="{Binding NavigateCommand}"
+                            CommandParameter="GbXmlViewerView">
+
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <Image Source="pack://application:,,,/GbXmlDesign.Presentation;component/Resources/Images/gbXmlViewer.png"
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Top"
+                                   Stretch="Uniform"/>
+
+                        <TextBlock Text="gbXML 3D Viewer" VerticalAlignment="Center" Margin="10,0,10,0"/>
+
+                    </StackPanel>
+                </Button>
+            </Border>
+
+
+            <!--// Ventilation Calculations View - Navigate Button //-->
+            <Border x:Name="VentCalcBorder"
+                        DockPanel.Dock="Top"
+                        Background="{StaticResource menuBackColor}"
+                        Grid.Row="3">
+
+                <Button x:Name="VentCalcViewButton"
+                            Style="{StaticResource MenuButton}"
+                            Background="Transparent"
+                            Click="ActiveTab_Click"
+                            Command="{Binding NavigateCommand}"
+                            CommandParameter="VentCalcView">
+
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <Image Source="pack://application:,,,/GbXmlDesign.Presentation;component/Resources/Images/VentilateCalc.png"
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Top"
+                                   Stretch="Uniform" />
+
+                        <TextBlock Text="Ventilation Calculations" VerticalAlignment="Center" Margin="10,0,10,0" />
+
+                    </StackPanel>
+                </Button>
+            </Border>
+
+
+            <!--// Carrier HAP Load Calculations View - Navigate Button //-->
+            <Border x:Name="LoadCalcBorder"
+                        DockPanel.Dock="Top"
+                        Background="{StaticResource menuBackColor}"
+                        Grid.Row="4" >
+
+                <Button x:Name="LoadCalcViewButton"
+                            Style="{StaticResource MenuButton}"
+                            Background="Transparent"
+                            Click="ActiveTab_Click"
+                            Command="{Binding NavigateCommand}"
+                            CommandParameter="LoadCalcView">
+
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <Image Source="pack://application:,,,/GbXmlDesign.Presentation;component/Resources/Images/LoadCalc.png"
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Top"
+                                   Stretch="Uniform" />
+
+                        <TextBlock Text="Load Calculations" VerticalAlignment="Center" Margin="10,0,10,0" />
+
+                    </StackPanel>
+                </Button>
+            </Border>
+
+
+            <!--// Settings View - Navigate Button //-->
+            <Border x:Name="AppSettingsBorder"
+                        DockPanel.Dock="Top"
+                        Background="{StaticResource menuBackColor}"
+                        Grid.Row="5">
+
+                <Button x:Name="AppSettingsViewButton"
+                            Style="{StaticResource MenuButton}"
+                            Background="Transparent"
+                            Click="ActiveTab_Click" >
+
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <Image Source="pack://application:,,,/GbXmlDesign.Presentation;component/Resources/Images/Settings.png"
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Top"
+                                   Stretch="Uniform" />
+
+                        <TextBlock Text="Settings" VerticalAlignment="Center" Margin="10,0,10,0" />
+
+                    </StackPanel>
+                </Button>
+            </Border>
+
+
+            <!--// Close Application - Button //-->
+            <Border x:Name="CloseAppBorder"
+                        DockPanel.Dock="Top"
+                        Background="{StaticResource menuBackColor}"
+                        Grid.Row="6">
+
+                <Button x:Name="ExitApplicationButton"
+                            Style="{StaticResource MenuButton}"
+                            Background="Transparent"
+                            Click="ActiveTab_Click"
+                            Command="{Binding ExitApplicationCommand}">
+
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <Image Source="pack://application:,,,/GbXmlDesign.Presentation;component/Resources/Images/Exit.png"
+                                   HorizontalAlignment="Left" 
+                                   VerticalAlignment="Top"
+                                   Stretch="Uniform" />
+
+                        <TextBlock Text="Shutdown" VerticalAlignment="Center" Margin="10,0,10,0" />
+
+                    </StackPanel>
+                </Button>
+            </Border>
+
+            <!--// Menu Separator //-->
+            <Separator Grid.Row="7" Margin="10" DockPanel.Dock="Top" Height="0.8" Background="white" VerticalAlignment="Top"/>
+
+
+        </Grid>
+    </Border>
+</UserControl>

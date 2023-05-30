@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C44FB716-E28F-4992-B520-9EB159BECE86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GbXmlDesign.Presentation</RootNamespace>
+    <AssemblyName>GbXmlDesign.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\net461\lib\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Modules\AppHome\AppHomeModule.cs" />
+    <Compile Include="Modules\AppHome\ViewModels\AppHomeMenuViewModel.cs" />
+    <Compile Include="Modules\AppHome\ViewModels\AppHomeViewModel.cs" />
+    <Compile Include="Modules\AppHome\Menus\AppHomeMenuView.xaml.cs">
+      <DependentUpon>AppHomeMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AppHome\Views\AppHomeView.xaml.cs">
+      <DependentUpon>AppHomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AppSettings\AppSettingsModule.cs" />
+    <Compile Include="Modules\AppSettings\Views\AppSetttingsView.xaml.cs">
+      <DependentUpon>AppSetttingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GbXmlViewer\ViewModels\GbXmlViewerViewModel.cs" />
+    <Compile Include="Modules\GbXmlViewer\Views\GbXmlViewerView.xaml.cs">
+      <DependentUpon>GbXmlViewerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Selectors\NullTemplateSelector.cs" />
+    <Compile Include="Modules\AppSettings\ViewModels\AppSetttingsViewModel.cs" />
+    <Compile Include="ViewModels\LeftButtonViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\Menus\NavigationMenuViewModel.cs" />
+    <Compile Include="ViewModels\ProjectViewModel.cs" />
+    <Compile Include="ViewModels\RightButtonViewModel.cs" />
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Behaviors\CloseWindowBehavior.cs" />
+    <Compile Include="Commands\NavigateCommand.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Views\Menus\NavigationMenuView.xaml.cs">
+      <DependentUpon>NavigationMenuView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Modules\AppHome\Menus\AppHomeMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\AppHome\Views\AppHomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\AppSettings\Views\AppSetttingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\GbXmlViewer\Views\GbXmlViewerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\LoadCalc\Views\LoadCalcView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\VentCalc\Views\VentCalcView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Styles\ButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\CheckBoxStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\Colors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\ColorScheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\ComboBoxStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\DataGridStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\DockBarStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\ExpanderStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\MenuStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\TextBoxStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\TopRibbonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Menus\NavigationMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\GbXmlViewer\GbXmlViewerModule.cs" />
+    <Compile Include="Modules\LoadCalc\LoadCalcModule.cs" />
+    <Compile Include="Modules\LoadCalc\ViewModels\LoadCalcViewModel.cs" />
+    <Compile Include="Modules\LoadCalc\Views\LoadCalcView.xaml.cs">
+      <DependentUpon>LoadCalcView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VentCalc\VentCalcModule.cs" />
+    <Compile Include="Modules\VentCalc\ViewModels\VentCalcViewModel.cs" />
+    <Compile Include="Modules\VentCalc\Views\VentCalcView.xaml.cs">
+      <DependentUpon>VentCalcView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GbXmlDesign\GbXmlDesign.Application\GbXmlDesign.Application.csproj">
+      <Project>{C17FE860-5E06-4888-870A-ED4F192DAE4A}</Project>
+      <Name>GbXmlDesign.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GbXmlDesign\GbXmlDesign.Core\GbXmlDesign.Core.csproj">
+      <Project>{43BA0B73-AB1B-433E-A944-76530EFF8CB9}</Project>
+      <Name>GbXmlDesign.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GbXmlDesign\GbXmlDesign.Shared\GbXmlDesign.Shared.csproj">
+      <Project>{5480B4F1-90AB-457A-BF4D-A2F6B752EE1B}</Project>
+      <Name>GbXmlDesign.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Interface\app-home.png" />
+    <Resource Include="Resources\Images\Interface\app-open.png" />
+    <Resource Include="Resources\Images\Interface\app-redo.png" />
+    <Resource Include="Resources\Images\Interface\app-refresh.png" />
+    <Resource Include="Resources\Images\Interface\app-save.png" />
+    <Resource Include="Resources\Images\Interface\app-settings.png" />
+    <Resource Include="Resources\Images\Interface\app-undo.png" />
+    <Resource Include="Resources\Images\Interface\browser.png" />
+    <Resource Include="Resources\Images\Interface\window-close.png" />
+    <Resource Include="Resources\Images\Interface\window-maximize.png" />
+    <Resource Include="Resources\Images\Interface\window-minimize.png" />
+    <Resource Include="Resources\Images\Interface\window-restore.png" />
+    <Content Include="Resources\Backgrounds\Cubemap_Grandcanyon.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\Images\Dashboard.png" />
+    <Resource Include="Resources\Images\Exit.png" />
+    <Resource Include="Resources\Images\gbXmlViewer.png" />
+    <Resource Include="Resources\Images\ImportGbxml.png" />
+    <Resource Include="Resources\Images\LoadCalc.png" />
+    <Resource Include="Resources\Images\Settings.png" />
+    <Resource Include="Resources\Images\VentilateCalc.png" />
+    <Resource Include="Resources\Icons\GreenBuildingXML.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="MahApps.Metro">
+      <Version>2.4.9</Version>
+    </PackageReference>
+    <PackageReference Include="MahApps.Metro.IconPacks">
+      <Version>4.11.0</Version>
+    </PackageReference>
+    <PackageReference Include="PresentationFramework.Aero2">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Unity">
+      <Version>8.1.97</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Wpf">
+      <Version>8.1.97</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>7.0.0-preview.2.22152.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Threading.Tasks.Extensions">
+      <Version>4.5.4</Version>
+    </PackageReference>
+    <PackageReference Include="System.ValueTuple">
+      <Version>4.5.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

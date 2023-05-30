@@ -1,0 +1,196 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+GbXmlDesignSuite (Solution)
+│
+│
+├── GbXmlDesignSuite.Application.csproj
+│    │
+│    ├── DTOs
+│    │    └── ProjectDTO.cs
+│    │      
+│    ├── Mappers
+│    │    └── ProjectMapper.cs
+│    │ 
+│    ├── Models
+│    │    └── ProjectMapper.cs
+│    │ 
+│    └── Services
+│         ├── ModuleStateServices.cs
+│         │    ├── AppHomeStateService.cs
+│         │    ├── AppSettingsStateService.cs
+│         │    ├── GbXmlViewerStateService.cs
+│         │    ├── LoadCalcStateService.cs
+│         │    ├── ProjectMgmtStateService.cs
+│         │    └── VentCalcStateService.cs
+│         │
+│         ├── AppDataService.cs
+│         └── RecentProjectsDataService.cs
+│
+│
+│
+│
+├── GbXmlDesignSuite.Core.csproj
+│    │
+│    ├── Entities
+│    │    └── Project.cs
+│    │      
+│    ├── Enums
+│    │    └── ProjectStatus.cs
+│    │ 
+│    ├── Events
+│    │    ├── BuildingUpdatedEvent.cs
+│    │    ├── ProjectCreatedEvent.cs
+│    │    └── StatusBarUpdateEvent.cs
+│    │ 
+│    ├── Exceptions
+│    │    ├── BuildingNotFoundException.cs
+│    │    └── ProjectNotFoundException.cs
+│    │
+│    └── Interfaces
+│         ├── IProjectService.cs
+│         └── IRepository.cs
+│    
+│
+│
+│
+├── GbXmlDesign.Infrastructure.csproj
+│    │
+│    ├── Configuration
+│    │    ├── DataServiceConfiguration.cs
+│    │    └── RepositoryConfiguration.cs
+│    │      
+│    ├── DataModels
+│    │    └── ProjectDataModel.cs
+│    │ 
+│    └── Repositories
+│         └── ProjectRepository.cs
+│   
+│   
+│
+│
+├── GbXmlDesign.Presentation.csproj
+│    │
+│    ├── Behaviors
+│    │    └── CloseWindowBehavior.cs
+│    │      
+│    ├── Commands
+│    │    └── NavigateCommand.cs
+│    │      
+│    ├── Converters
+│    │    └── BooleanToVisibilityConverter.cs
+│    │
+│    ├── Modules
+│    │    ├── AppHome.cs
+│    │    │    ├── ViewModels
+│    │    │    │    └── AppHomeViewModel.cs
+│    │    │    ├── Views
+│    │    │    │    └── AppHomeView.xmal
+│    │    │    └── AppHomeModule.cs
+│    │    │
+│    │    ├── AppSettings.cs
+│    │    │    ├── ViewModels
+│    │    │    │    └── AppSettingsViewModel.cs
+│    │    │    ├── Views
+│    │    │    │    └── AppSettingsView.xmal
+│    │    │    └── AppSettingsModule.cs
+│    │    │
+│    │    ├── GbXmlViewer.cs
+│    │    │    ├── ViewModels
+│    │    │    │    └── GbXmlViewerViewModel.cs
+│    │    │    ├── Views
+│    │    │    │    └── GbXmlViewerView.xmal
+│    │    │    └── GbXmlViewerModule.cs
+│    │    │
+│    │    ├── LoadCalc.cs
+│    │    │    ├── ViewModels
+│    │    │    │    └── LoadCalcViewModel.cs
+│    │    │    ├── Views
+│    │    │    │    └── LoadCalcView.xmal
+│    │    │    └── LoadCalcModule.cs
+│    │    │
+│    │    └── VentCalc.cs
+│    │         ├── ViewModels
+│    │         │    └── VentCalcViewModel.cs
+│    │         ├── Views
+│    │         │    └── VentCalcView.xmal
+│    │         └── VentCalcModule.cs
+│    │
+│    ├── Resources
+│    │    ├── Backgrounds
+│    │    │    └── Cubemap_Grandcanyon.dds
+│    │    │
+│    │    ├── Icons
+│    │    │    └── GreenBuildingXML.ico
+│    │    │
+│    │    ├── Images
+│    │    │    │── Interface
+│    │    │    │    ├── app-home.png
+│    │    │    │    ├── app-open.png
+│    │    │    │    ├── app-redo.png
+│    │    │    │    ├── app-refresh.png
+│    │    │    │    ├── app-save.png
+│    │    │    │    ├── app-settings.png
+│    │    │    │    ├── app-undo.png
+│    │    │    │    ├── browser.png
+│    │    │    │    ├── window-close.png
+│    │    │    │    ├── window-maximize.png
+│    │    │    │    ├── window-minimize.png
+│    │    │    │    └── window-restore.png     
+│    │    │    │
+│    │    │    ├── Dashboard.png
+│    │    │    ├── Exit.png
+│    │    │    ├── gbXmlViewer.png
+│    │    │    ├── ImportGbxml.png
+│    │    │    ├── LoadCalc.png
+│    │    │    ├── Settings.png
+│    │    │    └── VentilateCalc.png
+│    │    │    
+│    │    └── Styles
+│    │         ├── ButtonStyle.xaml
+│    │         ├── CheckBoxStyles.xaml
+│    │         ├── Colors.xaml
+│    │         ├── ColorScheme.xaml
+│    │         ├── ComboBoxStyle.xaml
+│    │         ├── DataGridStyle.xaml
+│    │         ├── DockBarStyles.xaml
+│    │         ├── ExpanderStyle.xaml
+│    │         ├── MenuStyles.xaml
+│    │         ├── TextBoxStyles.xaml
+│    │         └── TopRibbonStyle.xaml
+│    │
+│    ├── ViewModels
+│    │    ├── Menus   
+│    │    │    └── NavigationMenuViewModel.cs
+│    │    │ 
+│    │    └── MainWindowModel.cs
+│    │
+│    └── Views
+│         ├── Menus
+│         │    └── NavigationMenuView.xaml
+│         │
+│         └── MainWindow.xaml 
+│     
+│           
+│               
+└── GbXmlDesign.Presentation.csproj
+     │
+     ├── Constants
+     │    ├── HardCodedValues.cs
+     │    └── RegionNames.cs           
+     │            
+     ├── Extensions
+     │    └── ObservableCollectionExtensions.cs 
+     │           
+     └── Helpers
+          └── FileHelper.cs        
+
+

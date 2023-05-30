@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProjectModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ProjectModel>
+    <ProjectNumber>23001</ProjectNumber>
+    <ProjectName>Test Project 1</ProjectName>
+	<ProjectDirectoryPath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\23001 - Project_1</ProjectDirectoryPath>
+	<ProjectPicturePath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\AppHome_TestPictures\Project_1.Pic.png</ProjectPicturePath>
+		<ProjectDateCreated>2023-05-26T02:54:07.9888733-04:00</ProjectDateCreated>
+		<ProjectDateModified>2023-05-26T02:54:07.9888733-04:00</ProjectDateModified>
+  </ProjectModel>
+	<ProjectModel>
+		<ProjectNumber>23002</ProjectNumber>
+		<ProjectName>Test Project 2</ProjectName>
+		<ProjectDirectoryPath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\23002 - Project_2</ProjectDirectoryPath>
+		<ProjectPicturePath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\AppHome_TestPictures\Project_2.Pic.png</ProjectPicturePath>
+		<ProjectDateCreated>2023-05-26T02:54:07.9888733-04:00</ProjectDateCreated>
+		<ProjectDateModified>2023-05-26T02:54:07.9888733-04:00</ProjectDateModified>
+	</ProjectModel>
+	<ProjectModel>
+		<ProjectNumber>23003</ProjectNumber>
+		<ProjectName>Test Project 3</ProjectName>
+		<ProjectDirectoryPath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\23003 - Project_3</ProjectDirectoryPath>
+		<ProjectPicturePath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\AppHome_TestPictures\Project_3.Pic.png</ProjectPicturePath>
+		<ProjectDateCreated>2023-05-26T02:54:07.9888733-04:00</ProjectDateCreated>
+		<ProjectDateModified>2023-05-26T02:54:07.9888733-04:00</ProjectDateModified>
+	</ProjectModel>
+	<ProjectModel>
+		<ProjectNumber>23004</ProjectNumber>
+		<ProjectName>Test Project 4</ProjectName>
+		<ProjectDirectoryPath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\23004 - Project_4</ProjectDirectoryPath>
+		<ProjectPicturePath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\AppHome_TestPictures\Project_4.Pic.png</ProjectPicturePath>
+		<ProjectDateCreated>2023-05-26T02:54:07.9888733-04:00</ProjectDateCreated>
+		<ProjectDateModified>2023-05-26T02:54:07.9888733-04:00</ProjectDateModified>
+	</ProjectModel>
+	<ProjectModel>
+		<ProjectNumber>23005</ProjectNumber>
+		<ProjectName>Test Project 5</ProjectName>
+		<ProjectDirectoryPath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\23005 - Project_5</ProjectDirectoryPath>
+		<ProjectPicturePath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\AppHome_TestPictures\Project_5.Pic.png</ProjectPicturePath>
+		<ProjectDateCreated>2023-05-26T02:54:07.9888733-04:00</ProjectDateCreated>
+		<ProjectDateModified>2023-05-26T02:54:07.9888733-04:00</ProjectDateModified>
+	</ProjectModel>
+	<ProjectModel>
+		<ProjectNumber>23006</ProjectNumber>
+		<ProjectName>Test Project 6</ProjectName>
+		<ProjectDirectoryPath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\23006 - Project_6</ProjectDirectoryPath>
+		<ProjectPicturePath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\AppHome_TestPictures\Project_6.Pic.png</ProjectPicturePath>
+		<ProjectDateCreated>2023-05-26T02:54:07.9888733-04:00</ProjectDateCreated>
+		<ProjectDateModified>2023-05-26T02:54:07.9888733-04:00</ProjectDateModified>
+	</ProjectModel>
+	<ProjectModel>
+		<ProjectNumber>23007</ProjectNumber>
+		<ProjectName>Test Project 7</ProjectName>
+		<ProjectDirectoryPath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\23007 - Project_7</ProjectDirectoryPath>
+		<ProjectPicturePath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\AppHome_TestPictures\Project_7.Pic.png</ProjectPicturePath>
+		<ProjectDateCreated>2023-05-26T02:54:07.9888733-04:00</ProjectDateCreated>
+		<ProjectDateModified>2023-05-26T02:54:07.9888733-04:00</ProjectDateModified>
+	</ProjectModel>
+	<ProjectModel>
+		<ProjectNumber>23008</ProjectNumber>
+		<ProjectName>Test Project 8</ProjectName>
+		<ProjectDirectoryPath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\23008 - Project_8</ProjectDirectoryPath>
+		<ProjectPicturePath>C:\Users\peter\Documents\GitHub\GbXmlDesign\GbXmlDesign.Testing\AppHome_TestPictures\Project_8.Pic.png</ProjectPicturePath>
+		<ProjectDateCreated>2023-05-26T02:54:07.9888733-04:00</ProjectDateCreated>
+		<ProjectDateModified>2023-05-26T02:54:07.9888733-04:00</ProjectDateModified>
+	</ProjectModel>
+</ArrayOfProjectModel>

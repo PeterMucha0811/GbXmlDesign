@@ -1,0 +1,41 @@
+GbXmlDesignSuite.Core - This is your Domain Layer and contains your business logic and domain rules.
+	- Entities: These are your domain entities like Project, Building, System, Zone.
+	- Interfaces: Interfaces for the services and repositories are defined here, providing contracts that the actual implementation in other layers must follow.
+	- Enums: These are enumeration types used by your entities.
+	- Exceptions: Custom exceptions related to the domain layer.
+	- Events: Domain events that get triggered when a specific action occurs in your domain.
+	- GbXmlDesignSuite.Infrastructure - This is the Data Layer that handles data access and infrastructure services.
+
+Repositories: Implementations of your repository interfaces defined in Core layer. These handle communication with your data source.
+	- DataModels: These are the data access objects or models that map to your database.
+	- Migrations: If you're using Entity Framework, code-first migrations will go here.
+	- Configuration: Contains configuration classes for data layer specifics, like connection settings.
+	- GbXmlDesignSuite.Application - This is the Application Layer, essentially the heart of your operation, which mediates between the presentation and domain layers.
+
+Services: These are your application services. They contain the logic for handling commands and queries to your domain.
+	- Mappers: These classes help to convert or map one object to another. For instance, you might have a mapper that converts a data model to a DTO or vice versa.
+	- DTOs (Data Transfer Objects): These are simplified, often flattened versions of your domain entities, used to transfer data across layers.
+	- GbXmlDesignSuite.Presentation - This is the Presentation Layer, which contains all the UI-related stuff.
+
+Modules: This is where your Prism modules are located. Each of these modules corresponds to a functional area of your application.
+	- Views: These are your UI screens.
+	- ViewModels: These classes provide data binding between your views and domain data.
+	- Behaviors: These classes add additional functionality to your XAML elements.
+	- Converters: Converters in WPF are used to convert one type to another in binding scenarios.
+	- Commands: These classes handle user input like button clicks.
+	- GbXmlDesignSuite.Shared - This contains common utilities and helpers that can be used across layers.
+
+Common: Common classes that are used throughout the application.
+	- Extensions: Extension methods for built-in .NET types.
+	- Helpers: Helper classes to perform certain common or complex functions.
+	- Constants: Contains constant values that are used across the application.
+
+
+Each of these layers have their own responsibility in the context of the application:
+	- Domain Layer (Core) encapsulates business logic and rules.
+	- Data Layer (Infrastructure) provides implementations to handle data operations.
+	- Application Layer mediates between the
+
+
+
+
